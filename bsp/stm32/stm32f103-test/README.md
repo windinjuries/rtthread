@@ -1,0 +1,7 @@
+# BSP
+- MCU: STM32F103C6T6 
+  - ARM: Cortex-M3
+  - FLASH: 32KB
+  - SRAM: 10KB
+  - FREQ: 72MHz
+- UART1:
