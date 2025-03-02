@@ -15,26 +15,18 @@
 /* defined the LED0 pin: PA1 */
 #define LED0_PIN    GET_PIN(C, 13)
 
-int num = 0;
-int count = 0;
-
 int main(void)
 {
 		rt_kprintf("rtthread init success!\n");
     /* set LED0 pin mode to output */
     rt_pin_mode(LED0_PIN, PIN_MODE_OUTPUT);
 
-    while (1)                
+    while (1) 
     {
         rt_pin_write(LED0_PIN, PIN_HIGH);
         rt_thread_mdelay(500);
         rt_pin_write(LED0_PIN, PIN_LOW);
         rt_thread_mdelay(500);
 			  rt_kprintf("rtthread test!\n");
-        num++;
-        if(num > 10)
-        {
-          rt_kprintf("start test!\n");
-        }
     }  
 }
