@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "configurations": [
+                {
+                    "cwd": "${workspaceRoot}",
+                    "executable": "GD32F103.elf",
+                    "name": "Debug Microcontroller",
+                    "request": "launch",
+                    "type": "cortex-debug",
+                    "runToMain": true,
+                    "servertype": "openocd",
+                    "armToolchainPath": "/home/hpf/Compile_chain/gcc-arm-none-eabi-10.3-2021.10/bin",
+                    "configFiles":[
+                        "stlink-v2-1.cfg",
+                        "stm32f1x.cfg"
+                    ],
+                },
+            ]
+        }
+    ]
+}

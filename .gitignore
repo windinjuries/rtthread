@@ -44,7 +44,7 @@ ncscope.*
 tags
 
 .idea
-.vscode
+# .vscode
 *.code-workspace
 *.eide.*
 .history
